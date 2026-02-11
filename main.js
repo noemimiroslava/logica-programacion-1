@@ -12,10 +12,10 @@ num.push(num3);
 
 
 for (i=0;i<3;i++){
-    for (j=0;i>2;j++)
-        if (num[i]>num[j]){
-            x=num[i];
-            num[i]=num[j];
+    for (j=0;j<2;j++)
+        if (num[j]>num[j+1]){
+            x=num[j];
+            num[j]=num[j+1];
             num[j]=x;
         }
 }
@@ -23,5 +23,5 @@ for (i=0;i<3;i++){
 console.log(num);
 
 numreverse=num.reverse();
-
+//menor a mayor
 console.log(numreverse);
